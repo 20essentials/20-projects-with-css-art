@@ -1,0 +1,235 @@
+---
+import Card from '@components/Card.astro';
+const arrayOfCards = [
+  {
+    title: 'Disc Vintage Pink Floyd',
+    color: '#f17430',
+    portada: './assets/card/portadas/disc.avif',
+    description: `A vintage vinyl record  that evokes the colors of Pink Floyd's prism, all with a retro and sleek touch`,
+    js: true,
+    urlGithub: 'https://20essentials.github.io/project-000-799/',
+    urlRepo: 'https://github.com/20essentials/project-000-799',
+    num: 1
+  },
+  {
+    title: 'Domino',
+    color: '#f17430',
+    portada: './assets/card/portadas/domino.avif',
+    description: `A single domino piece, sleek and polished, with bold dots that convey a sense of strategy and timeless appeal`,
+    urlGithub: 'https://github.com/20essentials/project-000-043/',
+    urlRepo: 'https://20essentials.github.io/project-000-043/',
+    js: false,
+    num: 2
+  },
+  {
+    title: 'LightSaber',
+    color: '#f17430',
+    portada: './assets/card/portadas/lightsaber.avif',
+    description: `A glowing lightsaber with vivid neon colors, combining sleek and futuristic design with an energetic, radiant aura`,
+    urlGithub: 'https://20essentials.github.io/project-000-024/',
+    urlRepo: 'https://github.com/20essentials/project-000-024',
+    js: true,
+    num: 3
+  },
+  {
+    title: 'Chrome Logo',
+    color: '#f17430',
+    portada: './assets/card/portadas/chrome.avif',
+    description: `A flat Chrome logo, designed with bold, solid colors and clean shapes`,
+    urlGithub: 'https://20essentials.github.io/project-000-092/',
+    urlRepo: 'https://github.com/20essentials/project-000-092/',
+    js: false,
+    num: 4
+  },
+  {
+    title: 'Casino Card',
+    color: '#f17430',
+    portada: './assets/card/portadas/casinoCard.avif',
+    description: `A classic casino card, designed with bold graphics and vibrant colors, exuding a sense of excitement and high stakes`,
+    urlGithub: 'https://20essentials.github.io/project-000-032/',
+    urlRepo: 'https://github.com/20essentials/project-000-032',
+    js: true,
+    num: 5
+  },
+  {
+    title: 'Bill Cipher',
+    color: '#f17430',
+    portada: './assets/card/portadas/bill.avif',
+    description: `A CSS art Bill Cipher, featuring a sleek triangular form with a mysterious eye, evoking a cryptic and eerie presence`,
+    urlGithub: 'https://20essentials.github.io/project-000-143/',
+    urlRepo: 'https://github.com/20essentials/project-000-143/',
+    js: false,
+    num: 6
+  },
+  {
+    title: 'Stadium 3d',
+    color: '#f17430',
+    portada: './assets/card/portadas/stadium.avif',
+    description: `A dynamic 3D stadium, featuring vibrant and capturing the thrill and energy of live sports events`,
+    urlGithub: 'https://20essentials.github.io/project-000-042/',
+    urlRepo: 'https://github.com/20essentials/project-000-042',
+    js: true,
+    num: 7
+  },
+  {
+    title: 'T-rex Chrome',
+    color: '#f17430',
+    portada: './assets/card/portadas/trex.avif',
+    description: `A minimalist T-Rex from Chrome, designed with bold pixelated shapes, capturing a retro aesthetic`,
+    urlGithub: 'https://20essentials.github.io/project-000-132/',
+    urlRepo: 'https://github.com/20essentials/project-000-132/',
+    js: false,
+    num: 8
+  },
+  {
+    title: 'Piano',
+    color: '#f17430',
+    portada: './assets/card/portadas/piano.avif',
+    description: `A grand piano with elegant keys, polished to perfection, evoking a sense of classical sound`,
+    urlGithub: 'https://20essentials.github.io/project-000-667/',
+    urlRepo: 'https://github.com/20essentials/project-000-667',
+    js: true,
+    num: 9
+  },
+  {
+    title: 'Cassette',
+    color: '#f17430',
+    portada: './assets/card/portadas/cassette.avif',
+    description: `A vintage cassette tape, featuring a plastic casing and magnetic tape, evoking nostalgia`,
+    urlGithub: 'https://20essentials.github.io/project-000-665/',
+    urlRepo: 'https://github.com/20essentials/project-000-665/',
+    js: false,
+    num: 10
+  },
+  {
+    title: 'Pink Panther',
+    color: '#f17430',
+    portada: './assets/card/portadas/pinkpanther.avif',
+    description: `A pixel art Pink Panther, featuring blocky yet smooth design, capturing its playful essence`,
+    urlGithub: 'https://20essentials.github.io/project-000-075/',
+    urlRepo: 'https://github.com/20essentials/project-000-075/',
+    js: true,
+    num: 11
+  },
+  {
+    title: 'Card Joker',
+    color: '#f17430',
+    portada: './assets/card/portadas/cardJoker.avif',
+    description: `A Batman Joker edition card, featuring bold artwork and dark tones, capturing the iconic villain’s essence`,
+    urlGithub: 'https://20essentials.github.io/project-000-125/',
+    urlRepo: 'https://github.com/20essentials/project-000-125/',
+    js: false,
+    num: 12
+  },
+  {
+    title: 'Bender',
+    color: '#f17430',
+    portada: './assets/card/portadas/bender.avif',
+    description: `A sleek Bender robot design, featuring a metallic body and expressive eyes, capturing his rebellious`,
+    urlGithub: 'https://20essentials.github.io/project-000-127/',
+    urlRepo: 'https://github.com/20essentials/project-000-127/',
+    js: false,
+    num: 13
+  },
+  {
+    title: 'Newspaper',
+    color: '#f17430',
+    portada: './assets/card/portadas/news.avif',
+    description: `A cool newspaper design, featuring bold headlines and modern typography, exuding a sleek and dynamic style`,
+    urlGithub: 'https://20essentials.github.io/project-000-302/',
+    urlRepo: 'https://github.com/20essentials/project-000-302/',
+    js: false,
+    num: 14
+  },
+  {
+    title: 'Cube 3d In Room',
+    color: '#f17430',
+    portada: './assets/card/portadas/cube.avif',
+    description: `A 3D cube with a heart, resting in a celeste room, casting soft shadows and evoking a warm, futuristic aesthetic`,
+    urlGithub: 'https://20essentials.github.io/project-000-155/',
+    urlRepo: 'https://github.com/20essentials/project-000-155/',
+    js: false,
+    num: 15
+  },
+  {
+    title: 'Iphone Mockup',
+    color: '#f17430',
+    portada: './assets/card/portadas/iphone.avif',
+    description: `A sleek iPhone mockup, featuring a polished design and vibrant screen and minimalist elegance`,
+    urlGithub: 'https://20essentials.github.io/project-000-494/',
+    urlRepo: 'https://github.com/20essentials/project-000-494/',
+    js: false,
+    num: 16
+  },
+  {
+    title: 'Spongebob Money',
+    color: '#f17430',
+    portada: './assets/card/portadas/money.avif',
+    description: `A SpongeBob Money, featuring bold shapes and vibrant details, capturing cartoonish financial theme`,
+    urlGithub: 'https://20essentials.github.io/project-000-215/',
+    urlRepo: 'https://github.com/20essentials/project-000-215/',
+    js: false,
+    num: 17
+  },
+  {
+    title: 'Casio Watch',
+    color: '#f17430',
+    portada: './assets/card/portadas/casio.avif',
+    description: `A classic Casio watch, featuring a digital display and sturdy design, exuding retro style`,
+    urlGithub: 'https://20essentials.github.io/project-000-663/',
+    urlRepo: 'https://github.com/20essentials/project-000-663/',
+    js: false,
+    num: 18
+  },
+  {
+    title: 'Diskette 3 1/2',
+    color: '#f17430',
+    portada: './assets/card/portadas/diskette.avif',
+    description: `A classic 3.5-inch floppy disk, featuring a sturdy plastic shell, evoking digital nostalgia`,
+    urlGithub: 'https://20essentials.github.io/project-000-107/',
+    urlRepo: 'https://github.com/20essentials/project-000-107/',
+    js: false,
+    num: 19
+  },
+  {
+    title: 'Book 3d',
+    color: '#f17430',
+    portada: './assets/card/portadas/book.avif',
+    description: `A 3D book design, with detailed pages and a textured cover, exuding a sense of sophistication`,
+    urlGithub: 'https://20essentials.github.io/project-000-650/',
+    urlRepo: 'https://github.com/20essentials/project-000-650/',
+    js: false,
+    num: 20
+  }
+];
+---
+
+<section class='container-cards'>
+  {arrayOfCards.map(dataCard => <Card {...dataCard} />)}
+</section>
+
+<style>
+  .container-cards {
+    content-visibility: auto;
+    min-height: 100vh;
+    height: max-content;
+    width: 100%;
+    background-color: #000;
+    padding: 4rem;
+    display: grid;
+    gap: 4rem;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    @media (width <= 520px) and (orientation: landscape) {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    @media (width <= 1400px) and (orientation: landscape) {
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+    @media (width <= 1111px) and (orientation: portrait) {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+  }
+</style>

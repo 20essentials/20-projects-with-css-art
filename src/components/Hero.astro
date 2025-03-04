@@ -1,0 +1,112 @@
+<section class='hero'>
+  <h2 class='h2-title'>
+    <span class='span-title'>20</span> PROJECTS WITH <img
+      src='./assets/logos/css.svg'
+      alt='css logo'
+      loading='lazy'
+    /> ART
+  </h2>
+</section>
+
+<style>
+  .hero {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    --square-size: 50px;
+    --square-size-plus-one: calc(var(--square-size) + 1px);
+    --square-size-negative: calc(var(--square-size) * -1);
+
+    background-image: radial-gradient(ellipse, #0000 20%, #0004 40%, #000 65%),
+      repeating-linear-gradient(
+        to bottom,
+        transparent 0 var(--square-size),
+        #555 var(--square-size) var(--square-size-plus-one)
+      ),
+      repeating-linear-gradient(
+        to right,
+        transparent 0 var(--square-size),
+        #555 var(--square-size) var(--square-size-plus-one)
+      ),
+      radial-gradient(ellipse 500px 600px at 50% 60%, #143071, transparent),
+      radial-gradient(circle 300px at 40% 40%, #8e1765, transparent);
+    animation: move 2.5s linear infinite;
+
+    @media (width <= 1111px) {
+      --square-size: 40px;
+    }
+    @media (width >= 3000px) {
+      --square-size: 25px;
+    }
+  }
+
+  .h2-title {
+    --color: #663399;
+    --fz: 6vmax;
+    font-size: var(--fz);
+    text-wrap: balance;
+    color: #eee;
+    width: 50%;
+    text-align: center;
+    font-family: var(--saphifen-font);
+    text-shadow:
+      0 0 10px var(--color),
+      0 0 20px var(--color),
+      0 0 40px var(--color),
+      0 0 80px var(--color),
+      0 0 160px var(--color),
+      0 0 360px var(--color);
+    will-change: text-shadow;
+    line-height: 1.2;
+    animation: toTop 1s linear both;
+    animation-delay: 0.5s;
+
+    @media (width >= 4600px) {
+      width: 74%;
+      --fz: 3vmax;
+    }
+
+    @media (width <= 1111px) and (orientation: portrait) {
+      width: 70%;
+    }
+
+    .span-title {
+      font-family: cursive, fantasy, cursive;
+      font-style: italic;
+    }
+
+    img {
+      height: var(--fz);
+      vertical-align: bottom;
+    }
+  }
+
+  @keyframes toTop {
+    0% {
+      transform: translateY(120px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position:
+        0 0,
+        var(--square-size-negative) var(--square-size-negative),
+        var(--square-size-negative) var(--square-size-negative),
+        0 0,
+        0 0;
+    }
+  }
+</style>

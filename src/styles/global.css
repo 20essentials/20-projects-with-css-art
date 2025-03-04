@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #000;
+}
+
+/****************************SCROLL****************************/
+@font-face {
+  font-family: 'Saphifen';
+  src: url('./assets/fonts/Saphifen.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --primary-black: #000;
+  --primary-gray: #555;
+  --saphifen-font: 'Saphifen', fantasy, cursive, Impact;
+}
+
+body {
+  max-width: 1920px;
+  margin-inline: auto;
+  min-height: 100vh;
+  height: max-content;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/****************************SCROLL****************************/
+
+body {
+  --sb-track-color: var(--primary-black);
+  --sb-thumb-color: var(--primary-gray);
+  --sb-size: 10px;
+
+  @media (width <= 800px) {
+    --sb-size: 4px;
+  }
+
+  @media (width >= 2000px) {
+    --sb-size: 17px;
+  }
+  @media (width >= 4000px) {
+    --sb-size: 27px;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--primary-gray) var(--primary-black);
+  }
+}
+
+/****************************CARD COMPONENT****************************/
+
+:root {
+  --html: url('./assets/logos/html5.svg');
+  --css: url('./assets/logos/css.svg');
+  --js: url('./assets/logos/javascript.svg');
+  --github: url('./assets/logos/github.svg');
+  --noise: url('./assets/card/noise.webp');
+  --texture: url('./assets/card/texture-1.webp');
+  --code-icon: path(
+    'M31.1 15.55 23.77 22.88 21.94 21.05 27.44 15.55 21.94 10.05 23.77 8.22ZM3.66 15.55 9.16 21.05 7.33 22.88 0 15.55 7.33 8.22 9.16 10.06ZM12.68 27.21H9.93L18.42 3.88H21.18Z'
+  );
+}
+card-of-a-project {
+  --width: 390px;
+  zoom: 0.7;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url(./assets/card/jost-vf.woff2) format('woff2');
+  font-display: swap;
+}
+
+/****************************LAST****************************/
+
+astro-dev-toolbar {
+  display: none !important;
+}

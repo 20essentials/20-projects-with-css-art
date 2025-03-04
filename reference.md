@@ -1,0 +1,2 @@
+- **Reference / Inspiration ⬇️**
+  - [https://youtu.be/8ZW73xmKVhE?si=vO8CO8SUzNZDdUDm](@manzdev teacher design cards inspiration)
