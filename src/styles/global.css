@@ -33,18 +33,7 @@ button {
 body {
   --sb-track-color: var(--primary-black);
   --sb-thumb-color: var(--primary-gray);
-  --sb-size: 10px;
-
-  @media (width <= 800px) {
-    --sb-size: 4px;
-  }
-
-  @media (width >= 2000px) {
-    --sb-size: 17px;
-  }
-  @media (width >= 4000px) {
-    --sb-size: 27px;
-  }
+  --sb-size: 0.7vmax;
 }
 
 body::-webkit-scrollbar {
@@ -68,29 +57,27 @@ body::-webkit-scrollbar-thumb {
 /****************************CARD COMPONENT****************************/
 
 :root {
-  --html: url('./assets/logos/html5.svg');
-  --css: url('./assets/logos/css.svg');
-  --js: url('./assets/logos/javascript.svg');
-  --github: url('./assets/logos/github.svg');
-  --noise: url('./assets/card/noise.webp');
-  --texture: url('./assets/card/texture-1.webp');
+  --html: url('/assets/logos/html5.svg');
+  --css: url('/assets/logos/css.svg');
+  --js: url('/assets/logos/javascript.svg');
+  --github: url('/assets/logos/github.svg');
+  --noise: url('/assets/card/noise.webp');
+  --texture: url('/assets/card/texture-1.webp');
   --code-icon: path(
     'M31.1 15.55 23.77 22.88 21.94 21.05 27.44 15.55 21.94 10.05 23.77 8.22ZM3.66 15.55 9.16 21.05 7.33 22.88 0 15.55 7.33 8.22 9.16 10.06ZM12.68 27.21H9.93L18.42 3.88H21.18Z'
   );
 }
+
 card-of-a-project {
-  --width: 390px;
+  --width: 16vmax;
   zoom: 0.7;
 }
 
 @font-face {
   font-family: Jost;
-  src: url(./assets/card/jost-vf.woff2) format('woff2');
+  src: url(/assets/card/jost-vf.woff2) format('woff2');
   font-display: swap;
 }
 
 /****************************LAST****************************/
 
-astro-dev-toolbar {
-  display: none !important;
-}
