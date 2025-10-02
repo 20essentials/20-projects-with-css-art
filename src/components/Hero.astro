@@ -1,5 +1,9 @@
+---
+import { baseUrl } from 'utils/functions';
+---
+
 <section class='hero'>
-  <img src="" alt="">
+  <img src={baseUrl('/assets/titulo.avif')} alt='titulo' class='am-titulo' />
 </section>
 
 <style>
@@ -35,9 +39,13 @@
     @media (width >= 3000px) {
       --square-size: 25px;
     }
+
+    .am-titulo {
+      width: 40%;
+      mix-blend-mode: difference;
+    }
   }
 
-  
   @keyframes move {
     0% {
       background-position: 0 0;
