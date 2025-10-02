@@ -3,7 +3,7 @@ import { baseUrl } from 'utils/functions';
 ---
 
 <section class='hero'>
-  <img src={baseUrl('/assets/titulo.avif')} alt='titulo' class='am-titulo' />
+  <img draggable="false" src={baseUrl('/assets/titulo.avif')} alt='titulo' class='am-titulo' />
 </section>
 
 <style>
@@ -42,7 +42,7 @@ import { baseUrl } from 'utils/functions';
 
     .am-titulo {
       width: 40%;
-      mix-blend-mode: difference;
+      mix-blend-mode: lighten;
     }
   }
 

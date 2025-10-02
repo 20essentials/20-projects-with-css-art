@@ -1,5 +1,6 @@
 ---
 import '@styles/global.css';
+import { baseUrl } from 'utils/functions';
 ---
 
 <!doctype html>
@@ -7,8 +8,13 @@ import '@styles/global.css';
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='./assets/favicon.webp' />
-    <title>20 Projects with CSS Art</title>  </head>
+    <link
+      rel='icon'
+      type='image/svg+xml'
+      href={baseUrl('/assets/favicon.webp')}
+    />
+    <title>20 Projects with CSS Art</title>
+  </head>
   <body>
     <slot />
 
