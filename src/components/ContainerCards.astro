@@ -212,24 +212,14 @@ const arrayOfCards = [
   .container-cards {
     content-visibility: auto;
     min-height: 100vh;
-    height: max-content;
     width: 100%;
+    height: max-content;
     background-color: #000;
-    padding: 4rem;
+    padding: 3vmax;
+    gap: 5vmax;
     display: grid;
-    gap: 4rem;
     place-content: center;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
-    @media (width <= 520px) and (orientation: landscape) {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-    @media (width <= 1400px) and (orientation: landscape) {
-      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    }
-    @media (width <= 1111px) and (orientation: portrait) {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
+    grid-template-columns: repeat(auto-fit, minmax(25vmax, 1fr));
   }
 </style>
