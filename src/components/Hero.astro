@@ -9,9 +9,24 @@ import { baseUrl } from 'utils/functions';
     alt='titulo'
     class='am-titulo'
   />
+  <a href='https://youtu.be/8ZW73xmKVhE?si=vO8CO8SUzNZDdUDm'>
+    <img
+      draggable='false'
+      src={baseUrl('/assets/credits.png')}
+      alt='titulo'
+      class='credits'
+    />
+  </a>
 </section>
 
 <style>
+  .credits {
+    position: absolute;
+    width: 18vmax;
+    bottom: 1vmax;
+    left: 1vmax;
+  }
+
   .hero {
     height: 100vh;
     width: 100%;
@@ -40,7 +55,7 @@ import { baseUrl } from 'utils/functions';
       ),
       radial-gradient(circle 19.53vmax at 40% 40%, #8e1765, transparent);
     animation: move 2.5s linear infinite;
-    
+
     .am-titulo {
       width: 40%;
       mix-blend-mode: lighten;
