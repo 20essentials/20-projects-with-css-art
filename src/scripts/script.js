@@ -16,6 +16,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-/* window.addEventListener('resize', () => {
-  document.title = window.innerWidth;
-}); */
