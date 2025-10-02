@@ -1,4 +1,6 @@
 ---
+import { baseUrl } from "utils/functions";
+
 const { title, color, portada, description, js, urlGithub, urlRepo } =
   Astro.props;
 ---
@@ -22,7 +24,7 @@ const { title, color, portada, description, js, urlGithub, urlRepo } =
             <img
               loading='lazy'
               alt='Imagen de Datos hardcodeados'
-              src={portada}
+              src={baseUrl(portada)}
             />
           </a>
           <header class='description'>
@@ -64,7 +66,7 @@ const { title, color, portada, description, js, urlGithub, urlRepo } =
 
   @font-face {
     font-family: Jost;
-    src: url(./assets/card/jost-vf.woff2) format('woff2');
+    src: url(/assets/card/jost-vf.woff2) format('woff2');
     font-display: swap;
   }
 
