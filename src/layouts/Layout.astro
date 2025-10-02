@@ -19,7 +19,21 @@ import { baseUrl } from 'utils/functions';
     <slot />
 
     <script>
-      import '@scripts/script.js';
+      import 'atropos/atropos.min.css';
+      import Atropos from 'atropos';
+      import { $$ } from 'utils/functions';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const $cards = $$('.my-atropos');
+        $cards.forEach(el => {
+          const myAtropos = Atropos({
+            el,
+            activeOffset: 40,
+            shadowScale: 1,
+            alwaysActive: true
+          });
+        });
+      });
     </script>
   </body>
 </html>
