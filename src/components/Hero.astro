@@ -44,6 +44,10 @@ import { baseUrl } from 'utils/functions';
     .am-titulo {
       width: 40%;
       mix-blend-mode: lighten;
+
+      @media (width <= 1111px) and (orientation: portrait) {
+        width: 70%;
+      }
     }
   }
 

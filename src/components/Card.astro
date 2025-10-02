@@ -5,7 +5,7 @@ const { title, color, portada, description, js, urlGithub, urlRepo } =
   Astro.props;
 ---
 
-<div class='atropos my-atropos'>
+<div class='atropos my-atropos' data-anchor={urlRepo}>
   <div class='atropos-scale'>
     <div class='atropos-rotate'>
       <div class='atropos-inner'>
@@ -20,13 +20,13 @@ const { title, color, portada, description, js, urlGithub, urlRepo } =
               </div>
             </div>
           </header>
-          <a href={urlGithub} class='image-container'>
+          <div class='image-container'>
             <img
               loading='lazy'
               alt='Imagen de Datos hardcodeados'
               src={baseUrl(portada)}
             />
-          </a>
+          </div>
           <header class='description'>
             <div class='text'>
               <h1>{title}</h1>
@@ -47,11 +47,23 @@ const { title, color, portada, description, js, urlGithub, urlRepo } =
   </div>
 </div>
 
+<script>
+  document.addEventListener('click', e => {
+    const target = e.target as HTMLElement;
+    if (target.matches('.my-atropos *') || target.matches('.my-atropos')) {
+      const closestMyAtrops = target.closest('.my-atropos') as HTMLElement;
+      const anchor = closestMyAtrops.getAttribute('data-anchor');
+      if (anchor) window.open(anchor, '_blank');
+    }
+  });
+</script>
+
 <style>
   .my-atropos {
     --width: 29.95vmax;
     width: var(--width);
     zoom: 0.8;
+    cursor: pointer;
   }
 
   @font-face {
