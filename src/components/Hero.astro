@@ -3,7 +3,12 @@ import { baseUrl } from 'utils/functions';
 ---
 
 <section class='hero'>
-  <img draggable="false" src={baseUrl('/assets/titulo.avif')} alt='titulo' class='am-titulo' />
+  <img
+    draggable='false'
+    src={baseUrl('/assets/titulo.avif')}
+    alt='titulo'
+    class='am-titulo'
+  />
 </section>
 
 <style>
@@ -14,10 +19,9 @@ import { baseUrl } from 'utils/functions';
     display: flex;
     flex-wrap: wrap;
     place-content: center;
-    --square-size: 50px;
-    --square-size-plus-one: calc(var(--square-size) + 1px);
+    --square-size: 3.26vmax;
+    --square-size-plus-one: calc(var(--square-size) + 0.07vmax);
     --square-size-negative: calc(var(--square-size) * -1);
-
     background-image: radial-gradient(ellipse, #0000 20%, #0004 40%, #000 65%),
       repeating-linear-gradient(
         to bottom,
@@ -29,16 +33,11 @@ import { baseUrl } from 'utils/functions';
         transparent 0 var(--square-size),
         #555 var(--square-size) var(--square-size-plus-one)
       ),
-      radial-gradient(ellipse 500px 600px at 50% 60%, #143071, transparent),
-      radial-gradient(circle 300px at 40% 40%, #8e1765, transparent);
+     radial-gradient(ellipse 32.55vmax 39.06vmax at 50% 60%, #143071, transparent),
+radial-gradient(circle 19.53vmax at 40% 40%, #8e1765, transparent)
+;
     animation: move 2.5s linear infinite;
 
-    @media (width <= 1111px) {
-      --square-size: 40px;
-    }
-    @media (width >= 3000px) {
-      --square-size: 25px;
-    }
 
     .am-titulo {
       width: 40%;
