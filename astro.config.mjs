@@ -8,9 +8,9 @@ export default defineConfig({
   },
 
   //Localhost
-  site: 'http://localhost:4321/'
+  // site: 'http://localhost:4321/'
 
   //Deploy normal project
-  // base: '/20-images-and-svgs-with-krita/',
-  // site: 'https://20essentials.github.io/20-images-and-svgs-with-krita/'
+  base: '/20-projects-with-css-art/',
+  site: 'https://20essentials.github.io/20-projects-with-css-art/'
 });
