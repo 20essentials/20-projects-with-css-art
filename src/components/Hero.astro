@@ -1,11 +1,5 @@
 <section class='hero'>
-  <h2 class='h2-title'>
-    <span class='span-title'>20</span> PROJECTS WITH <img
-      src='./assets/logos/css.svg'
-      alt='css logo'
-      loading='lazy'
-    /> ART
-  </h2>
+  <img src="" alt="">
 </section>
 
 <style>
@@ -43,58 +37,7 @@
     }
   }
 
-  .h2-title {
-    --color: #663399;
-    --fz: 6vmax;
-    font-size: var(--fz);
-    text-wrap: balance;
-    color: #eee;
-    width: 50%;
-    text-align: center;
-    font-family: var(--saphifen-font);
-    text-shadow:
-      0 0 10px var(--color),
-      0 0 20px var(--color),
-      0 0 40px var(--color),
-      0 0 80px var(--color),
-      0 0 160px var(--color),
-      0 0 360px var(--color);
-    will-change: text-shadow;
-    line-height: 1.2;
-    animation: toTop 1s linear both;
-    animation-delay: 0.5s;
-
-    @media (width >= 4600px) {
-      width: 74%;
-      --fz: 3vmax;
-    }
-
-    @media (width <= 1111px) and (orientation: portrait) {
-      width: 70%;
-    }
-
-    .span-title {
-      font-family: cursive, fantasy, cursive;
-      font-style: italic;
-    }
-
-    img {
-      height: var(--fz);
-      vertical-align: bottom;
-    }
-  }
-
-  @keyframes toTop {
-    0% {
-      transform: translateY(120px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0px);
-      opacity: 1;
-    }
-  }
-
+  
   @keyframes move {
     0% {
       background-position: 0 0;

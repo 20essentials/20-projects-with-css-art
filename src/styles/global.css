@@ -11,16 +11,10 @@ html {
 }
 
 /****************************SCROLL****************************/
-@font-face {
-  font-family: 'Saphifen';
-  src: url('./assets/fonts/Saphifen.woff2') format('woff2');
-  font-display: swap;
-}
 
 :root {
   --primary-black: #000;
   --primary-gray: #555;
-  --saphifen-font: 'Saphifen', fantasy, cursive, Impact;
 }
 
 body {
