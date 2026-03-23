@@ -9,24 +9,9 @@ import { baseUrl } from 'utils/functions';
     alt='titulo'
     class='am-titulo'
   />
-  <a href='https://youtu.be/8ZW73xmKVhE?si=vO8CO8SUzNZDdUDm' target="_blank">
-    <img
-      draggable='false'
-      src={baseUrl('/assets/credits.png')}
-      alt='titulo'
-      class='credits'
-    />
-  </a>
 </section>
 
 <style>
-  .credits {
-    position: absolute;
-    width: 18vmax;
-    bottom: 1vmax;
-    left: 1vmax;
-  }
-
   .hero {
     height: 100vh;
     width: 100%;
@@ -37,7 +22,8 @@ import { baseUrl } from 'utils/functions';
     --square-size: 3.26vmax;
     --square-size-plus-one: calc(var(--square-size) + 0.07vmax);
     --square-size-negative: calc(var(--square-size) * -1);
-    background-image: radial-gradient(ellipse, #0000 20%, #0004 40%, #000 65%),
+    background-image:
+      radial-gradient(ellipse, #0000 20%, #0004 40%, #000 65%),
       repeating-linear-gradient(
         to bottom,
         transparent 0 var(--square-size),
